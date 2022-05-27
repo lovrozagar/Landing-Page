@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header{
+  background-color: #1f2937;
+  color: #FFF;
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2937;
+}
+ul {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+li:nth-child(1) {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 1.75rem;
+  }
+li:nth-child(2) {
+  margin-left: auto;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+.description {
+  display: flex;
+  padding: 5rem 0 7.5rem 0;
+  gap: 4rem;
+}
+.description-text-container,
+.description-image-container {
+  flex: 1 1 0;
+}
+.description-image-container {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.description-text-container h1{
+    font-weight: bold;
+    font-size: 4rem;
+}
+button{
+    border-radius: 10px;
+    padding: 8px 30px;
+    background-color: #3882F6;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.random-information {
+  margin: 3rem 0 5rem 0;
+}
+.random-information-container {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.random-information-container h2{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+.boxes-container {
+  display: flex;
+  gap: 2rem;
+}
+.box{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+.rectangle {
+  height: 12rem;
+  border-radius: 15px;
+  border: 5px solid rgb(0, 99, 192);
+}
+
+.quote {
+  background-color: #e5e7eb;
+}
+.quote-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.quote-text{
+    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 200;
+    line-height: 1.35;
+} 
+.thor {
+  text-align: right;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.sign-up{
+    color: #FFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: 2rem 0;
+    background-color: #3882F6;
+}
+.white{
+    border: 3px solid #fff
+}
+.left-side-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer{
+    background-color: #1f2937;
+    color: #FFF;
+    padding: 2rem;
+    text-align: center;
+}
