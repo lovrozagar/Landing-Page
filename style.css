@@ -11,32 +11,29 @@ body {
 }
 
 .header{
-  background-color: #1f2937;
   color: #FFF;
+  background-color: #031925;
 }
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: #1f2937;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
 }
 ul {
     display: flex;
     align-items: center;
-    height: 5rem;
 }
 li {
   list-style-type: none;
   margin-left: 1rem;
-}
-li:nth-child(1) {
-    margin-left: 0;
-    font-weight: bold;
-    font-size: 1.75rem;
-  }
-li:nth-child(2) {
-  margin-left: auto;
 }
 a{
     text-decoration: none;
@@ -47,15 +44,24 @@ a{
   padding: 5rem 0 7.5rem 0;
   gap: 4rem;
 }
+.description-text-container *{
+  margin: 0.75rem;
+}
+
 .description-text-container,
 .description-image-container {
   flex: 1 1 0;
 }
-.description-image-container {
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.poster {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 3px #000000);
+}
+
+.logo{
+    height: 100px;
+    width: auto;
 }
 .description-text-container h1{
     font-weight: bold;
@@ -64,11 +70,12 @@ a{
 button{
     border-radius: 10px;
     padding: 8px 30px;
-    background-color: #3882F6;
+    background-color: #690808;
     font-size: 1.1rem;
     color: #fff;
     font-weight: 600;
     margin: 1rem 0;
+    border: 3px solid rgb(15, 188, 201)
 }
 
 .random-information {
@@ -91,6 +98,16 @@ button{
     display: flex;
     flex-flow: column wrap;
     gap: 1rem;
+}
+.rectangle{
+    display: flex;
+}
+.boxy{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 3px #000000);
+    object-fit: cover;
 }
 .rectangle {
   height: 12rem;
@@ -130,7 +147,7 @@ button{
     background-color: #3882F6;
 }
 .white{
-    border: 3px solid #fff
+
 }
 .left-side-text{
     display: flex;
